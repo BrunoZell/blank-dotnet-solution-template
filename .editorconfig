@@ -65,6 +65,10 @@ insert_final_newline = false
 [*.csv]
 insert_final_newline = false
 
+# Docker ignore Files
+[.dockerignore]
+end_of_line = lf
+
 ###########################
 # .NET Language Conventions
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#language-conventions
