@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Bruno Zell",
+  "classifications": [
+    "Other"
+  ],
+  "name": "Blank Visual Studio solution for fresh .Net-Core projects",
+  "identity": "BrunoZell.BlankSolution",
+  "shortName": "blank-dotnet",
+  "tags": {
+    "type": "project"
+  },
+  "sourceName": "BlankTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "author": {
+      "type": "parameter",
+      "description": "Project author name for license.",
+      "isRequired": true,
+      "replaces": "project-author"
+    },
+    "currentYear": {
+      "type": "generated",
+      "generator": "now",
+      "parameters": {
+        "format": "yyyy"
+      },
+      "replaces": "current-year"
+    }
+  },
+  "sources": [
+    {
+      "exclude": [
+        ".template.config/**/*",
+        ".git/**",
+        ".vs/**",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        "**/*.user",
+        "README.md",
+        "LICENSE"
+      ],
+      "rename": {
+        "Project-README.md": "README.md",
+        "Project-LICENSE": "LICENSE"
+      }
+    }
+  ]
+}
